@@ -1,5 +1,5 @@
-# Name: Mr. Klaus Sipope
-# Description: Create a function that fetches climate data from NASA POWER
+### Name: Klaus Sipope
+### Description: Create a function that fetches climate data from NASA POWER
 
 library(sf)
 library(dplyr)
