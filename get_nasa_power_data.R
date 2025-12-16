@@ -1,11 +1,11 @@
 ### Name: Klaus Sipope
 ### Description: Create a function that fetches climate data from NASA POWER
 
+# Libraries
 library(sf)
 library(dplyr)
 library(nasapower)
 
-# 
 districts <- st_read("ghana-shapefile/gadm41_GHA_2.shp")
 
 # Get parameters from API call on NASAPOWER
