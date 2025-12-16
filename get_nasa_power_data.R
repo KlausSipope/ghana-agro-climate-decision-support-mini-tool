@@ -22,5 +22,7 @@ get_parameters<- function(district_name) {
     dates = c("2015-01-01", "2024-12-31"),
     temporal_api = "daily"
   )
+  
+  return(output)
 }
 
