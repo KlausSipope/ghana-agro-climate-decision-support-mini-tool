@@ -1,5 +1,5 @@
 ### Name: Klaus Sipope
-### Description: Preprocessing of climatology data for visualization
+### Description: Processing of climatology data for visualization
 
 # Load libraries
 library(dplyr)
@@ -7,7 +7,7 @@ library(dplyr)
 # Sources
 source("get_nasa_power_data.R")
 
-get_rainfall_df <- function(district_name) {
+process_rainfall_df <- function(district_name) {
   climate_df <- get_parameters(district_name)
   
   climate_dekad_df <- climate_df %>% 
@@ -33,7 +33,7 @@ get_rainfall_df <- function(district_name) {
   return(rainfall_df)
 }
 
-get_temperature_df <- function(district_name) {
+process_temperature_df <- function(district_name) {
   climate_df <- get_parameters(district_name)
   
   monthly_temperature_df <- climate_df %>%
